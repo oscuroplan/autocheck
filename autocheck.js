@@ -71,3 +71,111 @@ return longestWord;
 }
 
                                                                                     // задача 22/32
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+for (let i = min; i <= max; i += 1) {
+numbers.push(i);
+}
+  // Change code above this line
+  return numbers;
+}
+
+
+                                                                                    // задача 23/32
+function filterArray(numbers, value) {
+   // Change code below this line
+let newArray = [];
+  for (let number of numbers) {
+    if (number > value) {
+    newArray.push(number)
+    }
+  }
+  return newArray;
+  // Change code above this line
+}
+
+
+                                                                                    // задача 24/32
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+
+  return fruits.includes(fruit); // Change this line
+}
+
+                                                                                    // задача 25/32
+// Функцию getCommonElements(array1, array2) которая получает два массива произвольной длины в параметры array1 и array2, и возвращает новый массив, 
+// состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
+function getCommonElements(array1, array2) {
+  // Change code below this line
+const newArray = [];
+  for (let number of array1) {
+    if (array2.includes(number)){
+  newArray.push(number)
+    }
+  }
+
+return newArray;
+ // Change code above this line
+}
+
+
+                                                                                    // задача 26/32
+// рефакторинг кода 
+// for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];}
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+for (let item of order){
+total += item;}
+  // Change code above this line
+  return total;
+}
+
+                                                                                    // задача 27/32
+// Рефакторинг
+function filterArray(numbers, value) {
+  // Change code below this line
+  const filteredNumbers = [];
+
+  for (let number of numbers){
+    if (number > value) {
+     filteredNumbers.push(number);
+   }
+  }
+  
+ // for (let i = 0; i < numbers.length; i += 1) {
+ //   const number = numbers[i];
+
+//    if (number > value) {
+  //    filteredNumbers.push(number);
+   // }
+ // }
+
+  return filteredNumbers;
+  // Change code above this line
+}
+
+
+                                                                                    // задача 28/32
+// Change code below this line
+const a = 3 % 3;
+const b = 4 % 3;
+const c = 11 % 4;
+const d = 12 % 7;
+const e = 8 % 3;
+
+
+                                                                                    // задача 29/32
+// Напиши функцию getEvenNumbers(start, end) которая возвращает массив всех чётных чисел от start до end. 
+// Чётным считается число которое делится на 2 без остатка (10 % 2 === 0).
+function getEvenNumbers(start, end) {
+   // Change code below this line
+let evenNumbers = [];
+  for (let i = start; i <= end; i += 1) {
+    if (i % 2 === 0) {
+      evenNumbers.push(i);
+    }
+  }
+ return evenNumbers;}
