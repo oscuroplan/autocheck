@@ -179,3 +179,57 @@ let evenNumbers = [];
     }
   }
  return evenNumbers;}
+
+                                                                                    // задача 30/32
+// Дополни код так, чтобы в переменную number записывалось первое число от start до end,
+// которое делится на 5 без остатка.
+
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
+}
+
+
+                                                                                    // задача 31/32
+// Выполни рефакторинг функции findNumber(start, end, divisor) так, чтобы она:
+// возвращала первое число от start до end, которое делится на divisor без остатка
+// не использовала оператор break
+// не использовала переменную number
+
+function findNumber(start, end, divisor) {
+  // Change code below this line
+ // let number;
+
+  for (let i = start; i < end; i += 1) {
+    if (i % divisor === 0) {
+      //number = i;
+      //break;
+      return i;
+    }
+  }
+
+ // return number;
+  
+  // Change code above this line
+}
+
+                                                                                    // задача 32/32
+// Напиши функцию includes(array, value), которая делает тоже самое, что и метод массива массив.includes(значение) -
+// проверяет, есть ли в массиве array значение value, возвращая true если есть и false в противном случае.
+// При выполнении этой задачи в теле функции includes() нельзя использовать метод массив.includes(значение).
+function includes(array, value) {
+  // Change code below this line
+for (let number of array){
+  if (number === value) {
+    return true;}
+  
+}
+  return false;
+  // Change code above this line
+}
